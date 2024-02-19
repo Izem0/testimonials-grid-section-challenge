@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution page here](https://www.frontendmentor.io/solutions/testimonials-grid-section-challenge-solution-1E6Ao79TY7)
+- Live Site URL: [live site here](https://izem0.github.io/testimonials-grid-section-challenge/)
 
 ## My process
 
