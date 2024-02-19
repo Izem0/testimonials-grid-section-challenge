@@ -1,0 +1,227 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(242, 242, 242);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  max-width: 1050px;
+  margin: 3% 3% 0 3%;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+}
+
+footer {
+  margin-bottom: 10px;
+}
+
+.primary-section {
+  display: flex;
+  flex-direction: column;
+  width: 77%;
+}
+
+.secondary-section {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+}
+
+.top-row {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+}
+
+.bottom-row {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+}
+
+article {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.card-1 {
+  background-color: hsl(263, 55%, 52%);
+  color: white;
+  background-image: url("./images/bg-pattern-quotation.svg");
+  background-position: 83% 0%;
+  background-repeat: no-repeat;
+}
+
+.card-2 {
+  background-color: hsl(217, 19%, 35%);
+  color: white;
+}
+
+.card-3 {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.card-4 {
+  background-color: hsl(219, 29%, 14%);
+  color: white;
+}
+
+.card-5 {
+  background-color: hsl(0, 0%, 100%);
+  height: 100%;
+}
+
+.card-1 .quote-container {
+  top: 10%;
+  left: 35%;
+}
+
+.quote-container img {
+  object-fit: cover;
+}
+
+.card-1 .card-body,
+.card-2 .card-body,
+.card-4 .card-body {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.card-3 .card-body,
+.card-5 .card-body {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.card-1 .card-header .info .status,
+.card-2 .card-header .info .status,
+.card-4 .card-header .info .status {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.card-3 .card-header .info .status,
+.card-5 .card-header .info .status {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+  margin-right: 25px;
+}
+
+.card-1,
+.card-4 {
+  width: 69%;
+}
+
+.card-2,
+.card-3 {
+  width: 31%;
+}
+
+.card-header {
+  font-size: 0.7rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-header .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  gap: 1px;
+}
+
+.card-highlight {
+  font-size: 1.2rem;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.card-body {
+  font-size: 0.8rem;
+}
+
+.avatar img {
+  border-radius: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  width: 32px;
+}
+
+.card-4 .card-header .avatar img {
+  border: 2px solid hsla(263, 55%, 52%, 0.8);
+}
+
+@media (max-width: 820px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    max-width: 292px;
+  }
+
+  .top-row {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .bottom-row {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .primary-section {
+    width: 100%;
+  }
+
+  .secondary-section {
+    width: 100%;
+  }
+
+  .card {
+    height: fit-content;
+    overflow: visible;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .card-1,
+  .card-4 {
+    width: fit-content;
+  }
+
+  .card-2,
+  .card-3 {
+    width: fit-content;
+  }
+}
